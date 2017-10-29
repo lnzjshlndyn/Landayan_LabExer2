@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         btn_internal = (Button) findViewById(R.id.btn_internal);
         btn_next = (Button) findViewById(R.id.btn_next);
 
-        preferences = getSharedPreferences("preferences", Context.MODE_WORLD_READABLE);
+        preferences = getSharedPreferences("prefer", Context.MODE_WORLD_READABLE);
     }
 
         public void Next(View view){

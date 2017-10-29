@@ -31,13 +31,13 @@ public class SecondActivity extends AppCompatActivity {
         btn_back = (Button)findViewById(R.id.btn_back);
         tv_output = (TextView)findViewById(R.id.tv_output);
 
-        preferences = getSharedPreferences("preference", Context.MODE_WORLD_READABLE);
+        preferences = getSharedPreferences("prefer", Context.MODE_WORLD_READABLE);
     }
 
     public void LoadSharedPreferences(View view){
         String user = preferences.getString("user", "");
         String pass = preferences.getString("pass", "");
-        tv_output.setText("Shared Preferences - The Username: " + user + ", Password: " + pass);
+        tv_output.setText("Shared Preference:  The username : " + user + ", and password: " + pass);
     }
 
     public void LoadInternalStorage(View view){
