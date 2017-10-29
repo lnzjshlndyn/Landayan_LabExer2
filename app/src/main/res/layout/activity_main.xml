@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/tv_username"
         android:text="Username:"
-        android:textSize="20dp"
+        android:textSize="10pt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="18dp"
@@ -22,7 +22,7 @@
     <TextView
         android:id="@+id/tv_password"
         android:text="Password:"
-        android:textSize="20dp"
+        android:textSize="10pt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_username"
@@ -51,6 +51,7 @@
         android:layout_alignStart="@+id/et_username" />
 
     <Button
+        android:onClick="SharedPreferences"
         android:id="@+id/btn_shared"
         android:text="Shared Preferences"
         android:layout_width="wrap_content"
@@ -60,6 +61,7 @@
         android:layout_marginTop="45dp" />
 
     <Button
+        android:onClick="InternalStorage"
         android:id="@+id/btn_internal"
         android:text="Internal Storage"
         android:layout_width="wrap_content"
@@ -70,7 +72,7 @@
         android:layout_marginTop="15dp" />
 
     <Button
-        android:onClick="goNext"
+        android:onClick="Next"
         android:id="@+id/btn_next"
         android:text="Next"
         android:layout_width="wrap_content"

@@ -7,6 +7,7 @@
     tools:context="com.landayan.landayan_labexer2.SecondActivity">
 
     <Button
+        android:onClick="LoadSharedPreferences"
         android:id="@+id/btn_loadShared"
         android:text="Load Shared Preferences"
         android:layout_width="wrap_content"
@@ -16,6 +17,7 @@
         android:layout_marginTop="79dp" />
 
     <Button
+        android:onClick="LoadInternalStorage"
         android:id="@+id/btn_loadInternal"
         android:text="Load Internal Storage"
         android:layout_width="wrap_content"
@@ -25,7 +27,7 @@
         android:layout_marginTop="39dp" />
 
     <Button
-        android:onClick="clearData"
+        android:onClick="Clear"
         android:id="@+id/btn_clear"
         android:text="clear"
         android:layout_width="wrap_content"
@@ -36,7 +38,7 @@
         android:layout_marginTop="66dp" />
 
     <Button
-        android:onClick="goBack"
+        android:onClick="Back"
         android:id="@+id/btn_back"
         android:text="back"
         android:layout_width="wrap_content"
@@ -45,5 +47,15 @@
         android:layout_alignBottom="@+id/btn_clear"
         android:layout_alignRight="@+id/btn_loadInternal"
         android:layout_alignEnd="@+id/btn_loadInternal" />
+
+    <TextView
+        android:textSize="20dp"
+        android:text="OUTPUT"
+        android:id="@+id/tv_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_clear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
 
 </RelativeLayout>
